@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import game.Bird;
 import game.Controlls;
 import game.Pipes;
+import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
+import javax.imageio.ImageIO;
 
 public class GamePanel extends JPanel{
 
@@ -13,6 +16,8 @@ public class GamePanel extends JPanel{
 	static ArrayList<Pipes> pipes;
 	static int updatesPerPipeSpawn = 160, updates = 0, score = 0;
 	static final int SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
+
+	BufferedImage background, pause, titleScreen;
 
 	public enum GameStates{
 		TITLE_SCREEN,
@@ -26,6 +31,12 @@ public class GamePanel extends JPanel{
 		currentState = GameStates.TITLE_SCREEN;
 		bird = new Bird(100, 300);
 		pipes = new ArrayList<Pipes>();
+
+		try{
+			background = ImageIO.read(new FileInputStream("./res/background.png"));
+			pause = ImageIO.read(new FileInputStream("./res/pause.png"));
+			titleScreen = ImageIO.read(new FileInputStream("./res/title_screen.png"));
+		} catch (Exception e) { System.out.println(e.getMessage());}
 
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
 		this.addKeyListener(new Controlls());
@@ -43,8 +54,9 @@ public class GamePanel extends JPanel{
 		switch(currentState){
 		case TITLE_SCREEN:
 
-			drawTitleScreen(g2d);
+			g2d.drawImage(titleScreen, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
 			break;
+
 		case PLAY_STATE:
 
 			drawMainGame(g2d);
@@ -53,9 +65,7 @@ public class GamePanel extends JPanel{
 		case PAUSE_STATE:
 
 			drawMainGame(g2d);
-
-			g2d.setColor(new Color(0, 0, 0, 100));
-			g2d.drawString("Paused", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
+			g2d.drawImage(pause, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
 			
 			break;
 
@@ -89,7 +99,6 @@ public class GamePanel extends JPanel{
 
 			for(int i = 0; i < pipes.size(); i++){
 				if(pipes.get(i).topPipe.x + pipes.get(i).WIDTH <= 0){
-					score ++;
 					pipes.remove(i);
 				}
 				pipes.get(i).update();
@@ -110,23 +119,18 @@ public class GamePanel extends JPanel{
 
 	}
 
-	private void drawTitleScreen(Graphics2D g2d){
-		g2d.setColor(Color.YELLOW);
-		g2d.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-		g2d.setColor(new Color(0, 0, 0, 100));
-		g2d.drawString("Floppy Bird", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
-	}
-
 	private void drawMainGame(Graphics2D g2d){
-		g2d.setColor(Color.CYAN);
-		g2d.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT); //sky
+
+		g2d.drawImage(background, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
 
 		bird.draw(g2d);
+
 		for(int i = 0; i < pipes.size(); i++){
 			pipes.get(i).draw(g2d);
 		}
 
-		g2d.setColor(new Color(0, 0, 0, 100));			//score
+		//Score
+		g2d.setColor(new Color(0, 0, 0, 100));			
 		g2d.drawString(String.valueOf(score), 5, SCREEN_HEIGHT - 5);
 	}
 
