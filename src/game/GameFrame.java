@@ -28,6 +28,7 @@ public class GameFrame extends JFrame implements Runnable{
 		this.add(panel);
 		panel.setFocusable(true);
 		
+		this.setIconImage(panel.bird.birdImage);
 		this.pack();
 
 		this.setLocationRelativeTo(null);
