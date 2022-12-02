@@ -1,0 +1,508 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"upd",
+				"updatesPerPipeSpawn"
+			],
+			[
+				"upda",
+				"updatesPerPipeSpawn"
+			],
+			[
+				"ga",
+				"GamePanel"
+			],
+			[
+				"SCR",
+				"SCREEN_WIDTH"
+			],
+			[
+				"fi",
+				"fillRect"
+			],
+			[
+				"b",
+				"bird"
+			],
+			[
+				"SC",
+				"SCREEN_WIDTH"
+			],
+			[
+				"p",
+				"pipes"
+			],
+			[
+				"up",
+				"updatesPerPipeSpawn"
+			],
+			[
+				"sy",
+				"System"
+			],
+			[
+				"sw",
+				"switch"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"Gam",
+				"GamePanel"
+			],
+			[
+				"game",
+				"GamePanel"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"t",
+				"true"
+			],
+			[
+				"set",
+				"setPreferredSize"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"cya",
+				"darkcyan"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"r",
+				"hr"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"st",
+				"sticky"
+			],
+			[
+				"un",
+				"underline"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"si",
+				"size"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"dar",
+				"darkgray"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"gra",
+				"slategray"
+			],
+			[
+				"ma",
+				"main"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"text",
+				"text-overflow"
+			],
+			[
+				"just",
+				"justify-items"
+			],
+			[
+				"content",
+				"align-content"
+			],
+			[
+				"cont",
+				"justify-content"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"conte",
+				"justify-content"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"he",
+				"header"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/game/GamePanel.java",
+			"settings":
+			{
+				"buffer_size": 1689,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Customize Theme"
+			],
+			[
+				"Package Control: add",
+				"Package Control: Add Channel"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 258.0,
+		"history":
+		[
+			"cmd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/bin",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/bin/game",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/game",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/res"
+	],
+	"file_history":
+	[
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/game/Controlls.java",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/game/Pipes.java",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/game/Bird.java",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/game/GamePanel.java",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/Cristi/ControaleClass.java",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/src/game/GameFrame.java",
+		"/C/Users/Home pc/Desktop/code/java/Floppy Brid/compile.cmd",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/compile.cmd",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/src/animations/NextDayAnimation.java",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/src/buttons/NextDayButton.java",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/README.md",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/src/game/GameFrame.java",
+		"/C/Users/Home pc/Desktop/code/java/TestareEncodere.java",
+		"/C/Users/Home pc/Documents/My Games/Binding of Isaac Rebirth/log.txt",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/Valeriu/autonomous_tigaie_bmw.java",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/Alex/autonom/autonom_tigaie.java",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/README.md",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/Alex/autonom_tigaie.java",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/Cristi/readme.md",
+		"/C/Users/Home pc/Desktop/test2/test.java",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/src/game/GamePanel.java",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/src/buttons/BackButton.java",
+		"/C/Users/Home pc/Desktop/code/java/test.java",
+		"/C/Users/Home pc/Desktop/git test/branchFolder/a",
+		"/C/Users/Home pc/Desktop/git test/qwert.txt",
+		"/C/Users/Home pc/Desktop/git test/qwerty.txt",
+		"/C/Users/Home pc/Desktop/git test/README.md",
+		"/D/Git/mingw64/share/doc/git-doc/git-config.html",
+		"/C/Users/Home pc/Desktop/code/FtcRobotController-master/TeamCode/src/main/java/prog/Valeriu/empty.txt",
+		"/D/Git/mingw64/share/doc/git-doc/git-push.html",
+		"/C/Users/Home pc/Desktop/code/java/60-Seconds-Java-Edition/.project",
+		"/C/Users/Home pc/AppData/Local/Temp/Temp1_Neon-color-scheme-sublime-color-scheme.zip/Neon-color-scheme-sublime-color-scheme/messages/1.1.0.txt",
+		"/C/Users/Home pc/Desktop/code/site-uri/site web 2/main.html",
+		"/C/Users/Home pc/AppData/Local/Temp/Temp1_Neon-color-scheme-sublime-color-scheme.zip/Neon-color-scheme-sublime-color-scheme/Neon.sublime-color-scheme",
+		"/C/Users/Home pc/Downloads/60-Seconds-Java-Edition-master/README.md",
+		"/C/Users/Home pc/Desktop/code/site-uri/site web 2/style.css",
+		"/C/Users/Home pc/Desktop/code/java/floppy bred/main.java",
+		"/C/Users/Home pc/Downloads/missinghud2-master/missinghud2-master/CMakeLists.txt",
+		"/C/Users/Home pc/Desktop/code/site-uri/site web 1/pages/balisong.html",
+		"/C/Users/Home pc/Downloads/mem reduct/Readme.txt",
+		"/C/Users/Home pc/Downloads/mem reduct/History.txt",
+		"/C/Users/Home pc/Downloads/SteamAchievementManager/LICENSE.txt",
+		"/C/Users/Home pc/Downloads/SteamAchievementManager/README.md",
+		"/C/Users/Home pc/Desktop/code/site-uri/site web 1/style.css",
+		"/C/Users/Home pc/Desktop/code/site-uri/site web 1/pages/football.html",
+		"/C/Users/Home pc/Desktop/code/site-uri/site web 1/pages/home.html",
+		"/C/Users/Home pc/Desktop/games/The Binding Of Isaac Afterbirth plus/README.txt",
+		"/C/Users/Home pc/Desktop/programs/html/site web 2/main.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/game/GamePanel.java",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 286.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "MainProjct.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 389.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
