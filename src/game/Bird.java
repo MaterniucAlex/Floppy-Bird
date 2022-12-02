@@ -20,8 +20,11 @@ public class Bird{
 	}
 
 	public void update(){
-		
-		if(this.hitbox.y + this.HEIGHT <= 600 && this.hitbox.y >= 0){
+		if(this.hitbox.y <= 0){
+			this.hitbox.y += 1;
+			acceleration = 0;
+		}	
+		if(this.hitbox.y + this.HEIGHT <= 600){
 			this.hitbox.y += (int)acceleration;
 			acceleration += 0.335f;
 		} else 

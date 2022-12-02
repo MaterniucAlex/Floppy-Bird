@@ -1,6 +1,7 @@
 package game;
 
 import java.awt.*;
+import java.util.Random;
 
 public class Pipes{
 
@@ -8,10 +9,11 @@ public class Pipes{
 	int x, height;
 
 	Rectangle topPipe, bottomPipe;
-
+	Random rand = new Random();
 	public Pipes(int x){
+
 		this.x = x;
-		this.height = GamePanel.bird.hitbox.y + (GamePanel.bird.hitbox.height / 2);
+		this.height = GamePanel.SCREEN_HEIGHT / 2 - (GamePanel.SCREEN_HEIGHT / 6 * (rand.nextInt(3) - 1));
 
 		this.topPipe = new Rectangle(x, 0, WIDTH, height - 100);
 		this.bottomPipe = new Rectangle(x, height + 100, WIDTH, GamePanel.SCREEN_HEIGHT);
