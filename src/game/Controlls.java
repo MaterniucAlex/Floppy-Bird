@@ -6,16 +6,34 @@ public class Controlls implements KeyListener{
 	
 	@Override
 	public void keyPressed(KeyEvent e){
-		switch(e.getKeyChar()){
-		case 'w':
-			GamePanel.bird.acceleration = -8;
-			break;
+		switch(GamePanel.currentState){
+		case PLAY_STATE:
+			switch(e.getKeyChar()){
+			case ' ':
+			case 'w':
+			case 'W':
+				GamePanel.bird.acceleration = -8;
+				break;
+			case 'p':
+			case 'P':
+				GamePanel.currentState = GamePanel.GameStates.PAUSE_STATE;
+				break;
+			}
+		case TITLE_SCREEN:
+		case PAUSE_STATE:
+			switch(e.getKeyChar()){
+			case ' ':
+			case 'w':
+			case 'W':
+				GamePanel.currentState = GamePanel.GameStates.PLAY_STATE;
+				break;
+			}
 		}
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e){
-
+		
 	}
 
 	@Override
