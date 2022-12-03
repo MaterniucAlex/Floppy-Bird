@@ -16,7 +16,7 @@ public class Bird{
 	public Bird(int x, int y){
 		this.hitbox = new Rectangle(x, y, WIDTH, HEIGHT);
 		try{
-			birdImage = ImageIO.read(new FileInputStream("./res/bird.png"));
+			birdImage = ImageIO.read(new FileInputStream("./res/img/bird.png"));
 		} catch (Exception e) { System.out.println(e.getMessage());}
 	}
 	
@@ -35,7 +35,7 @@ public class Bird{
 			this.hitbox.y += (int)acceleration;
 			acceleration += 0.335f;
 		} else 
-			GamePanel.lose();
+			GamePanel.currentState = GamePanel.GameStates.LOSE_STATE;
 
 	}
 }
