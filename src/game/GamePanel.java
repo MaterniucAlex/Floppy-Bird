@@ -17,12 +17,13 @@ public class GamePanel extends JPanel{
 	static int updatesPerPipeSpawn = 160, updates = 0, score = 0;
 	static final int SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
 
-	BufferedImage background, pause, titleScreen;
+	BufferedImage background, pauseScreen, titleScreen, loseScreen;
 
 	public enum GameStates{
 		TITLE_SCREEN,
 		PLAY_STATE,
-		PAUSE_STATE
+		PAUSE_STATE,
+		LOSE_STATE
 	}
 
 	static GameStates currentState;
@@ -33,9 +34,10 @@ public class GamePanel extends JPanel{
 		pipes = new ArrayList<Pipes>();
 
 		try{
-			background = ImageIO.read(new FileInputStream("./res/background.png"));
-			pause = ImageIO.read(new FileInputStream("./res/pause.png"));
-			titleScreen = ImageIO.read(new FileInputStream("./res/title_screen.png"));
+			background = ImageIO.read(new FileInputStream("./res/img/background.png"));
+			pauseScreen = ImageIO.read(new FileInputStream("./res/img/pause.png"));
+			titleScreen = ImageIO.read(new FileInputStream("./res/img/title_screen.png"));
+			loseScreen = ImageIO.read(new FileInputStream("./res/img/lose_screen.png"));
 		} catch (Exception e) { System.out.println(e.getMessage());}
 
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
@@ -65,10 +67,15 @@ public class GamePanel extends JPanel{
 		case PAUSE_STATE:
 
 			drawMainGame(g2d);
-			g2d.drawImage(pause, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
+			g2d.drawImage(pauseScreen, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
 			
 			break;
+		case LOSE_STATE:
 
+			drawMainGame(g2d);
+			g2d.drawImage(loseScreen, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
+			
+			break;
 		}		
 	}
 
@@ -85,10 +92,13 @@ public class GamePanel extends JPanel{
 				updatesPerPipeSpawn = 120;
 				break;
 			case 20:
-				updatesPerPipeSpawn = 90;
+				updatesPerPipeSpawn = 120;
 				break;
 			case 30:
-				updatesPerPipeSpawn = 60;
+				updatesPerPipeSpawn = 90;
+				break;
+			case 40:
+				updatesPerPipeSpawn = 90;
 				break;
 			}
 
@@ -108,14 +118,14 @@ public class GamePanel extends JPanel{
 		}
 	}
 	
-	public static void lose(){
+	public static void restart(){
 
 		bird.hitbox.y = 300;
 		bird.acceleration = -10;
 		pipes.clear();
 		updates = 0;
 		score = 0;
-		updatesPerPipeSpawn = 120;
+		updatesPerPipeSpawn = 160;
 
 	}
 
